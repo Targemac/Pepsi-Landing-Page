@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pepsi Landing Page</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+
+        <section class="sec">
+            <header>
+                <a href="#">
+                    <img src="./images/logo.png" class="logo" alt="">
+                </a>
+                <ul>
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">Products</a> </li>
+                    <li> <a href="#">Whats New</a> </li>
+                    <li> <a href="#">Newsletter</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                </ul>
+            </header>
+
+            <!-- start of contetnt -->
+            <div class="content">
+                <div class="textBox">
+                    <h2>That's what <br> <span>I like</span> </h2>
+                    <p>
+                        Disclaimer video is for educational purpose only. Copyright Disclaimer Under Section 107 of the
+                        Copyright Act 1976,
+                        allowance is made for "fair use" for purposes such as criticism, comment, news reporting,
+                        teaching, scholarship, and
+                        research. Fair use is a use permitted by copyright statute that might otherwise be infringing.
+                        Non-profit, educational
+                        or personal use tips the balance in favor of fair use
+
+                    </p>
+                    <a href="#">View All Products</a>
+                </div>
+                <div class="imgBox">
+                    <img src="./images/pepsi001.png" alt="" class="pepsi">
+                </div>
+            </div>
+            <!-- end of contetnt -->
+
+            <!-- start of thunail -->
+            <ul class="thumb">
+                <li><img src="./images/pepsi001.png" onclick="imgSlider('pepsi001.png'); changeBgColor('#0062be')"
+                        alt="" class=""></li>
+                <li><img src="./images/pepsi002.png" onclick="imgSlider('pepsi002.png'); changeBgColor('#e60c2c')"
+                        alt="" class=""></li>
+                <li><img src="./images/pepsi003.png" onclick="imgSlider('pepsi003.png'); changeBgColor('#1e1e1e')"
+                        alt="" class=""></li>
+            </ul>
+            <!-- end of thunail -->
+
+            <!-- start of social icons -->
+            <ul class="sci">
+                <li> <a href="#"> <img src="images/facebook.png" alt=""> </a> </li>
+                <li> <a href="#"> <img src="images/twitter.png" alt=""> </a> </li>
+                <li> <a href="#"> <img src="images/instagram.png" alt=""> </a> </li>
+            </ul>
+            <!-- end of social icons -->
+        </section>
+
+        <script>
+            function imgSlider(anything) {
+                document.querySelector('.pepsi').src = `images/${anything}`;
+            }
+
+            function changeBgColor(color) {
+                const sec = document.querySelector('.sec');
+                sec.style.backgroundColor = color
+            }
+        </script>
+
+
+    </body>
+
+</html>
