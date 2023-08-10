@@ -1,7 +1,8 @@
 # Pepsi Landing Page
 ```
-Image located at the right-hand side can be changed simply by clicking the thumbnails located at the bottom
+The image located on the right-hand side can be changed simply by clicking the thumbnails located at the bottom
 ```
+* Live preview: https://pepsi-landing-page-clone.netlify.app/
 
 *1 - Regular*
 ![](./images/Screenshot%202023-04-30%20005022.png)
